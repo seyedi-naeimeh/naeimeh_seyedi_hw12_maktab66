@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="result.html" method="get" id="create-account-form">
+           <div class="inputForm" >
+                <label for="FirstName">First Name</label>
+                <input type="text" name="user-name" id="FirstName" placeholder="your name..." class="input-1" required>
+                <small ></small>
+           </div>
+            <div class="inputForm">
+                <label for="LastName">Last Name</label>
+                <input type="text" name="last-name" id="LastName" placeholder="Last Name..." class="input-1" required>
+                <small ></small>
+            </div>
+            <div class="inputForm">
+                <label >Countary</label>
+                <select class="input-2">
+                    <option>Australia</option>
+                    <option>Canada</option>
+                    <option>Iran</option>
+                    <option>Spain</option>
+                    <option>Turkey</option>
+                </select>
+            </div>
+            <div class="inputForm">
+                <label for="subject"> Subject</label>
+                <textarea placeholder="write something ..." rows="4" cols="50" id="subject" class="input-1" ></textarea>
+            </div>
+            
+            <input type="submit" value="Submit" id="register">
+        </form>
+
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="titel">Success</div>
+            <div class="close">&times;</div>
+        </div>
+        <div class="modal-body">
+            your information was successfully registered!
+        </div>
+
+    </div>
+    <div id="overlay"></div>
+    <script src="main.js"></script>
+</body>
+</html>

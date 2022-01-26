@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+.inputForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px;
+}
+
+.inputForm .input-1 {
+  padding: 10px;
+  color: #0f0f14;
+  margin: 5px;
+}
+
+.inputForm .input-2 {
+  padding: 10px;
+  margin: 5px;
+}
+
+.inputForm input.error {
+  border-color: #dc3545;
+}
+
+.inputForm input.success {
+  border-color: #28a745;
+}
+
+.inputForm small.error {
+  color: #dc3545;
+}
+
+.inputForm small.success {
+  color: #28a745;
+}
+
+form #register {
+  background-color: #28a745;
+  padding: 10px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+form #register:hover {
+  background-color: #34ce57;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+}
+
+.modal.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.modal .modal-header {
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #28a745;
+}
+
+.modal .modal-header.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal .modal-header.close {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal .modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+/*# sourceMappingURL=main.css.map */
